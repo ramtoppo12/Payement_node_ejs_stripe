@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRIPE PAYMENT DEMO</title>
+</head>
+<body>
+    <h3>Welcome to Payment GateWay</h3>
+    <form action="payment" method="POST">
+        <script
+            src="//checkout.stripe.com/v3/checkout.js"
+            class="stripe-button"
+            data-key="<%= key%>"
+            data-amount="70000000"
+            data-currency="inr"
+            data-name="Ram kumar toppo"
+            data-description="Buy this App for great Experience"
+            data-locale="auto"
+            ></script>
+    </form>
+</body>
+</html>
